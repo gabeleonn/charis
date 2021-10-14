@@ -44,176 +44,20 @@
 <div>
     <h2>Features</h2>
     <div>
-        <h3>API</h3>
-        <ul>
-            <h4>Bíblia</h4>
-            <li>
-                Ler todos os livros<br />
-                <font size="2" color="#999">➥ Trazer lista de livros da Bíblia com nome, descrição, categorias e quantidade de capítulos.</font>
-            </li>
-            <li>
-                Ler versículos por livro e capítulo<br />
-                <font size="2" color="#999">➥ Trazer lista de versículos por livro(short_name) e capítulo.</font>
-            </li>
-            <li>
-                Ler versículo por livro, capítulo e versículo<br />
-                <font size="2" color="#999">➥ Trazer um único versículo por livro(short_name), capítulo e versículo.</font>
-            </li>
-            <li>
-                Ler strong por número de referência<br />
-                <font size="2" color="#999">➥ Trazer definição da palavra, transliterado, original, ordenação e parsing com o número strong.</font>
-            </li>
-            <li>
-                Ler todos os livros separando por categoria<br />
-                <font size="2" color="#999">➥ Trazer lista de livros da Bíblia com nome, descrição, categorias e quantidade de capítulos separados pelas divisões bíblicas (ex: profetas menores, profetas maiores, etc).</font>
-            </li>
-            <li>
-                Ler estatística de palavras<br />
-                <font size="2" color="#999">➥ Trazer quantidade total de palavras, palavras traduzidas, palavras não traduzidas, quantas vezes uma mesma tradução se repete baseado no strong number, usuários e quantas traduções tiveram, porcentagem já traduzida.</font>
-            </li>     
-        </ul>
-        <ul>
-            <h4>Tradução</h4>
-            <li>
-                Ler todas as palavras (filtro por traduzidas ou não)<br />
-                <font size="2" color="#999">➥ Trazer lista de todas as palavras apenas ligadas ao seu respectivo livro.</font>
-            </li>
-            <li>
-                Ler todos os cabeçalhos (filtro por traduzidos ou não)<br />
-                <font size="2" color="#999">➥ Trazer lista cabeçalhos ligados ao respectivo livro.</font>
-            </li>
-            <li>
-                Ler todos os strongs (filtro por traduzidos ou não)<br />
-                <font size="2" color="#999">➥ Trazer lista com todos os strongs e suas definições.</font>
-            </li>
-            <li>
-                Enviar tradução de palavra para análise<br />
-                <font size="2" color="#999">➥ Envia tradução de uma única palavra para análise.</font>
-            </li>
-            <li>
-                Enviar tradução de strong para análise<br />
-                <font size="2" color="#999">➥ Envia tradução de definição de strong para análise.</font>
-            </li>
-            <li>
-                Enviar tradução de cabeçalho para análise<br />
-                <font size="2" color="#999">➥ Envia tradução de cabeçalho para análise.</font>
-            </li>
-            <li>
-                Enviar sugestão de novo cabeçalho para análise<br />
-                <font size="2" color="#999">➥ Envia sugestão de novo cabeçalho para análise.</font>
-            </li>
-            <li>
-                Enviar sugestão de nova referência cruzada para análise<br />
-                <font size="2" color="#999">➥ Envia sugestão de nova referência cruzada para análise.</font>
-            </li>
-            <li>
-                Enviar sugestão de nova descrição de livro para análise<br />
-                <font size="2" color="#999">➥ Envia sugestão de nova descrição de livro para análise.</font>
-            </li>
-            --- (somente admin)
-            <li>
-                Ler todas as sugestões<br />
-                <font size="2" color="#999">➥ Trazer a lista de todas sugestões feitas ligadas ao usuário.</font>
-            </li>
-            <li>
-                Enviar aprovação/recusa de sugestão<br />
-                <font size="2" color="#999">➥ Envia aprovação/recusa de sugestão, dando opção de responder sim ou não e porque (se não).</font>
-            </li>
-        </ul>
-        <ul>
-            <h4>Auth</h4>
-            <li>
-                SignUp<br />
-                <font size="2" color="#999">➥ Criar novo usuário com nome, sobrenome, e-mail e senha. Fazer confirmação por e-mail (recolher autorização de uso de nome).</font>
-            </li>
-            <li>
-                SignIn<br />
-                <font size="2" color="#999">➥ Fazer login com usuário criado retornado token válido.</font>
-            </li>
-            <li>
-                SignOut<br />
-                <font size="2" color="#999">➥ Inválidar token de sign in.</font>
-            </li>         
-        </ul>
+        <h3>Tradutor</h3>
+        <img src="https://github.com/gabeleonn/charis/blob/main/assets/charis-1.png?raw=true" alt="Interface de tradução" />
+        <img src="https://github.com/gabeleonn/charis/blob/main/assets/charis-2.png?raw=true" alt="Modal de tradução de palavra" />
+        <img src="https://github.com/gabeleonn/charis/blob/main/assets/charis-3.png?raw=true" alt="Modal de tradução de definição" />
+        <img src="https://github.com/gabeleonn/charis/blob/main/assets/charis-4.png?raw=true" alt="Modal de tradução de título de capítulo" />
+        <h3>Bíblia</h3>
+        <img src="https://github.com/gabeleonn/charis/blob/main/assets/bible.png?raw=true" alt="Interface bíblia interlinear" />
     </div>
+    <p>** Interfaces em estado inicial de criação.</p>
 </div>
 
 <div>
-    <h2>Entidades</h2>
-    <pre>
-        [
-            {
-                "entity": "word",
-                "reference": {
-                    "book": "1jo",
-                    "chapter": 1,
-                    "verse": 1,
-                    "heading": "The Word of Life",
-                    "cross_references": [ "Luke 24:36–49", "John 20:19–23" ]
-                },
-                "hebrew_sort": 999999,
-                "greek_sort": 125211,
-                "bsb_sort": 430707,
-                "translation": "Who",
-                "strong": 3739,
-                "created_at": "",
-                "updated_at": "",
-                "updated_by": ""
-            },
-            {
-                "entity": "book",
-                "id": "1jo",
-                "name": "1 John",
-                "description": "a description",
-                "categories": [ "love", "new life", "care", "etc" ],
-                "chapter_count": 55,
-                "verse_count": 1555,
-                "created_at": "",
-                "updated_at": "",
-                "updated_by": ""
-            },
-            {
-                "entity": "definition",
-                "strong": 3739,
-                "original": "Ὃ",
-                "translit": "Ho",
-                "parsing_short": "RelPro-NNS",
-                "parsing_long": "Personal / Relative Pronoun - Nominative Neuter Singular",
-                "definition": "Who, which, what, that. ",
-                "created_at": "",
-                "updated_at": "",
-                "updated_by": ""
-            },
-            {
-                "entity": "user",
-                "name": "John Doe",
-                "email": "john@doe.com",
-                "password": "mypass",
-                "anonymize": false,
-                "token": "last_valid_token"
-            },
-            {
-                "entity": "sugestion",
-                "user": "john@doe.com",
-                "entity_to_update": "what_entity",
-                "payload": {
-                    "word": "translated",
-                    "word_reference": {
-                        "book": "1jo",
-                        "chapter": 1,
-                        "verse": 1
-                    }, // ends word payload
-                    "definition": "definition translated",
-                    "strong": 3739, // ends definition payload
-                    "heading": "heading translated",
-                    "heading_reference": {
-                        "book": "1jo",
-                        "chapter": 1
-                    } // ends heading payload
-                }
-            }
-        ]
-      </pre>
+    <h2>Cores</h2>
+    <img src="https://github.com/gabeleonn/charis/blob/main/assets/colors.jpeg?raw=true" alt="Esquema de cores" />
 </div>
 
 <div justify="center">
