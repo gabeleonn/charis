@@ -45,19 +45,19 @@
     <h2>Features</h2>
     <div>
         <h3>Tradutor</h3>
-        <img src="https://github.com/gabeleonn/charis/blob/main/assets/charis-1.png?raw=true" alt="Interface de tradução" />
-        <img src="https://github.com/gabeleonn/charis/blob/main/assets/charis-2.png?raw=true" alt="Modal de tradução de palavra" />
-        <img src="https://github.com/gabeleonn/charis/blob/main/assets/charis-3.png?raw=true" alt="Modal de tradução de definição" />
-        <img src="https://github.com/gabeleonn/charis/blob/main/assets/charis-4.png?raw=true" alt="Modal de tradução de título de capítulo" />
+        <img src="https://github.com/gabeleonn/charis/blob/main/docs/charis-1.png?raw=true" alt="Interface de tradução" />
+        <img src="https://github.com/gabeleonn/charis/blob/main/docs/charis-2.png?raw=true" alt="Modal de tradução de palavra" />
+        <img src="https://github.com/gabeleonn/charis/blob/main/docs/charis-3.png?raw=true" alt="Modal de tradução de definição" />
+        <img src="https://github.com/gabeleonn/charis/blob/main/docs/charis-4.png?raw=true" alt="Modal de tradução de título de capítulo" />
         <h3>Bíblia</h3>
-        <img src="https://github.com/gabeleonn/charis/blob/main/assets/bible.png?raw=true" alt="Interface bíblia interlinear" />
+        <img src="https://github.com/gabeleonn/charis/blob/main/docs/bible.png?raw=true" alt="Interface bíblia interlinear" />
     </div>
     <p>** Interfaces em estado inicial de criação.</p>
 </div>
 
 <div>
     <h2>Cores</h2>
-    <img src="https://github.com/gabeleonn/charis/blob/main/assets/colors.jpeg?raw=true" alt="Esquema de cores" />
+    <img src="https://github.com/gabeleonn/charis/blob/main/docs/colors.jpeg?raw=true" alt="Esquema de cores" />
 </div>
 
 <div justify="center">
