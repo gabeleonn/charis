@@ -24,10 +24,15 @@
     "react",
     "@typescript-eslint",
     "prettier",
-    "better-styled-components"
+    "better-styled-components",
+    "react-hooks"
   ],
   "rules": {
+    "prettier/prettier": "error",
+    "semi": "error",
     "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid": "off",
     "@next/next/no-document-import-in-page": "off",
     "@typescript-eslint/no-var-requires": "off",
     "better-styled-components/sort-declarations-alphabetically": 2,
