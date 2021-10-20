@@ -1,6 +1,5 @@
 import { act, render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { InputTypes } from '@/interfaces';
 import { Input } from './Input';
 
 const mockOnChange = jest.fn();
@@ -15,7 +14,7 @@ describe('Input component', () => {
         value="test-text"
         onChange={mockOnChange}
         helperText="test-helper"
-        type={InputTypes.TEXT}
+        type="text"
       />,
     );
 
@@ -37,7 +36,7 @@ describe('Input component', () => {
         value="test-text"
         onChange={mockOnChange}
         helperText="test-helper"
-        type={InputTypes.TEXT}
+        type="text"
       />,
     );
 
@@ -57,7 +56,7 @@ describe('Input component', () => {
         value="test-text"
         onChange={mockOnChange}
         helperText="test-helper"
-        type={InputTypes.TEXTAREA}
+        type="textarea"
       />,
     );
 
@@ -76,7 +75,7 @@ describe('Input component', () => {
         placeholder="test-placeholder"
         value="test-text"
         onChange={mockOnChange}
-        type={InputTypes.TEXT}
+        type="text"
       />,
     );
 
@@ -98,7 +97,7 @@ describe('Input component', () => {
         value="test-text"
         onChange={mockOnChange}
         helperText="test-helper"
-        type={InputTypes.TEXTAREA}
+        type="textarea"
       />,
     );
 

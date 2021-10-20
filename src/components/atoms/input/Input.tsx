@@ -1,4 +1,4 @@
-import { InputProps, InputTypes } from '@/interfaces';
+import { InputProps } from '@/interfaces';
 import { Label } from '../label';
 
 export function Input({
@@ -12,7 +12,7 @@ export function Input({
   onChange,
 }: InputProps): JSX.Element {
   function renderProperType() {
-    if (type === InputTypes.TEXT) {
+    if (type === 'text') {
       return (
         <input
           type="text"

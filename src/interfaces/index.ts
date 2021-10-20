@@ -30,10 +30,7 @@ export interface LabelProps extends ReactComponent {
   helperText?: string;
 }
 
-export enum InputTypes {
-  TEXTAREA = 'textarea',
-  TEXT = 'text',
-}
+type InputTypes = 'textarea' | 'text';
 export interface InputProps extends Pick<LabelProps, 'helperText' | 'label'> {
   type: InputTypes;
   placeholder: string;

@@ -7,7 +7,6 @@ import { ALink } from '@/components/atoms/a-link';
 import { ChapterHeader } from '@/components/atoms/chapter-header';
 import { Button } from '@/components/atoms/button';
 import { Input } from '@/components/atoms/input';
-import { InputTypes } from '@/interfaces';
 import { DefinitionParsing } from '@/components/atoms/definition-parsing';
 
 function Home(): JSX.Element {
@@ -50,7 +49,7 @@ function Home(): JSX.Element {
         onChange={e => setText(e.target.value)}
         helperText="Helper text"
         disabled
-        type={InputTypes.TEXT}
+        type="text"
       />
       <Input
         label="Label"
@@ -58,7 +57,7 @@ function Home(): JSX.Element {
         placeholder="placeholder"
         value={textarea}
         onChange={e => setTextarea(e.target.value)}
-        type={InputTypes.TEXTAREA}
+        type="textarea"
       />
       {/* select and checkbox */}
       <Button id="abutton" ariaLabel="arialabel">
