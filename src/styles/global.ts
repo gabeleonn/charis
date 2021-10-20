@@ -2,11 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import theme from './theme';
 
 export default createGlobalStyle`
-  div {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-  }
   * {
     border: 0;
     padding: 0;
