@@ -30,6 +30,28 @@ describe('Button component', () => {
     expect(button).toHaveProperty('id', 'test-id');
   });
 
+  it('should have prop of disabled if disabled', () => {
+    const { getByText } = render(
+      <Button ariaLabel="test-aria" id="test-id" disabled>
+        children
+      </Button>,
+    );
+
+    const button = getByText('children');
+    expect(button).toHaveProperty('disabled', true);
+  });
+
+  it('should not have prop of disabled if not disabled', () => {
+    const { getByText } = render(
+      <Button ariaLabel="test-aria" id="test-id">
+        children
+      </Button>,
+    );
+
+    const button = getByText('children');
+    expect(button).toHaveProperty('disabled', false);
+  });
+
   it('should push if to is defined', async () => {
     const { getByText } = render(
       <Button ariaLabel="test-aria" id="test-id" to="/test">
