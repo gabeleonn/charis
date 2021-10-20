@@ -3,6 +3,7 @@ import { StrongReference } from '@/components/atoms/strong-reference';
 import { Verse } from '@/components/atoms/verse';
 import { ALink } from '@/components/atoms/a-link';
 import { ChapterHeader } from '@/components/atoms/chapter-header';
+import { Button } from '@/components/atoms/button';
 
 const Home = () => (
   <div style={{ padding: '20px' }}>
@@ -17,11 +18,14 @@ const Home = () => (
     <ALink href="/">Link to the Heaven</ALink>
     <input type="text" placeholder="What God wants from you?" />
     <input type="text" placeholder="What God wants from you?" disabled />
+    {/* select and checkbox */}
     <textarea name="dsad" id="dasda" rows={10} disabled />
-    <button type="button">Save me God!</button>
-    <button type="button" disabled>
+    <Button id="abutton" ariaLabel="arialabel">
       Save me God!
-    </button>
+    </Button>
+    <Button id="abutton" ariaLabel="arialabel" disabled>
+      Save me God!
+    </Button>
   </div>
 );
 

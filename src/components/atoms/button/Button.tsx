@@ -7,6 +7,7 @@ export function Button({
   onClick,
   to,
   children,
+  disabled = false,
 }: ButtonProps): JSX.Element {
   const { push } = useRouter();
 
@@ -24,6 +25,7 @@ export function Button({
       aria-label={ariaLabel}
       id={id}
       onClick={handleOnClick}
+      disabled={disabled}
     >
       {children}
     </button>

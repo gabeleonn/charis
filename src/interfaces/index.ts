@@ -21,6 +21,7 @@ export interface ButtonProps extends ReactComponent {
   onClick?: () => void;
   ariaLabel: string;
   id: string;
+  disabled?: boolean;
 }
 
 export interface ChapterHeaderProps {
