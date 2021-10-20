@@ -28,36 +28,14 @@ function Home(): JSX.Element {
             flexDirection: 'column',
           }}
         >
-          <ChapterHeader reference="1 John 1" />
           <div style={{ width: '500px' }}>
+            <ChapterHeader reference="1 John 1" />
             <Scrollbars style={{ height: '100px' }}>
-              <Verse number={1}>
-                I have some news, Jesus has died so you could live!
-              </Verse>
-              <Verse number={1}>
-                I have some news, Jesus has died so you could live!
-              </Verse>
-              <Verse number={1}>
-                I have some news, Jesus has died so you could live!
-              </Verse>
-              <Verse number={1}>
-                I have some news, Jesus has died so you could live!
-              </Verse>
-              <Verse number={1}>
-                I have some news, Jesus has died so you could live!
-              </Verse>
-              <Verse number={1}>
-                I have some news, Jesus has died so you could live!
-              </Verse>
-              <Verse number={1}>
-                I have some news, Jesus has died so you could live!
-              </Verse>
-              <Verse number={1}>
-                I have some news, Jesus has died so you could live!
-              </Verse>
-              <Verse number={1}>
-                I have some news, Jesus has died so you could live!
-              </Verse>
+              {Array.from(Array(10).keys()).map(item => (
+                <Verse key={item} number={item + 1}>
+                  I have some news, Jesus has died so you could live!
+                </Verse>
+              ))}
             </Scrollbars>
           </div>
           <DefinitionParsing
