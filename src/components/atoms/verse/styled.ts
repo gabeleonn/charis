@@ -8,4 +8,6 @@ export const VerseNumber = styled.sup`
   margin-right: 5px;
 `;
 
-export const VerseWrapper = styled.p``;
+export const VerseWrapper = styled.p`
+  width: 100%;
+`;
