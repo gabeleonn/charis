@@ -9,6 +9,7 @@ const theme = {
     },
     white: {
       regular: '#ffffff',
+      dark: '#fefefe',
     },
     black: {
       regular: '#191919',

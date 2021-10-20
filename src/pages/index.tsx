@@ -1,25 +1,24 @@
-import type { NextPage } from 'next';
-import Link from 'next/link';
 import { AncientWord } from '@/components/atoms/ancient-word';
+import { StrongReference } from '@/components/atoms/strong-reference';
+import { Verse } from '@/components/atoms/verse';
+import { ALink } from '@/components/atoms/a-link';
+import { ChapterHeader } from '@/components/atoms/chapter-header';
 
-const Home: NextPage = () => (
+const Home = () => (
   <div style={{ padding: '20px' }}>
-    I have some news, Jesus has died so you could live!
-    <p>
-      <sup>1</sup>This is a verse
-    </p>
+    <ChapterHeader reference="1 John 1" />
+    <Verse number={1}>
+      I have some news, Jesus has died so you could live!
+    </Verse>
+    <StrongReference origin="greek">716</StrongReference>
+    <StrongReference origin="hebrew">716</StrongReference>
     <AncientWord origin="hebrew">אָלֶף־בֵּית עִבְרִי‎</AncientWord>
     <AncientWord origin="greek">Ἁρμαγεδών</AncientWord>
-    <Link href="/" passHref>
-      <a>Link to the Heaven</a>
-    </Link>
-    <br />
+    <ALink href="/">Link to the Heaven</ALink>
     <input type="text" placeholder="What God wants from you?" />
-    <br />
     <input type="text" placeholder="What God wants from you?" disabled />
-    <br />
+    <textarea name="dsad" id="dasda" rows={10} disabled />
     <button type="button">Save me God!</button>
-    <br />
     <button type="button" disabled>
       Save me God!
     </button>
