@@ -1,5 +1,5 @@
 import { InputProps } from '@/interfaces';
-import { Label } from '../label';
+import { Label } from '@/components/atoms/label';
 
 export function Input({
   type,

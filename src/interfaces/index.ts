@@ -42,6 +42,17 @@ export interface InputProps extends Pick<LabelProps, 'helperText' | 'label'> {
   disabled?: boolean;
 }
 
+export interface SearchInputProps {
+  placeholder: string;
+  value: string;
+  onChange: (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => void;
+  handleSearch: () => void;
+  name: string;
+  disabled?: boolean;
+}
+
 export interface ButtonProps extends ReactComponent {
   to?: string;
   onClick?: () => void;

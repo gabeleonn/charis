@@ -105,4 +105,19 @@ export default createGlobalStyle`
       cursor: not-allowed;
     }
   }
+
+  *::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    cursor: pointer;
+  }
+
+  *::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: ${theme.colors.gray.regular};
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: ${theme.colors.gray.light};
+  }
 `;
