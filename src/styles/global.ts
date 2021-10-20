@@ -55,6 +55,7 @@ export default createGlobalStyle`
     cursor: pointer;
     text-decoration: none;
     color: ${theme.colors.purple.regular};
+    font-style: italic;
 
     &:hover {
       filter: brightness(0.85);

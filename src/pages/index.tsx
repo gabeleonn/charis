@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState } from 'react';
 import { AncientWord } from '@/components/atoms/ancient-word';
 import { StrongReference } from '@/components/atoms/strong-reference';
@@ -22,6 +23,10 @@ function Home(): JSX.Element {
         flexDirection: 'column',
       }}
     >
+      <Head>
+        <title>Biblía Interlinear</title>
+      </Head>
+
       <ChapterHeader reference="1 John 1" />
       <Verse number={1}>
         I have some news, Jesus has died so you could live!
