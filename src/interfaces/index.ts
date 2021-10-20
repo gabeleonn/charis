@@ -4,8 +4,9 @@ interface ReactComponent {
   children: ReactChild | ReactNode;
 }
 
+type originTypes = 'hebrew' | 'greek';
 export interface AncientWordProps extends ReactComponent {
-  origin: 'hebrew' | 'greek';
+  origin: originTypes;
 }
 
 export interface VerseProps extends ReactComponent {
@@ -14,6 +15,13 @@ export interface VerseProps extends ReactComponent {
 
 export interface ALinkProps extends ReactComponent {
   href: string;
+}
+
+export interface ParsingProps {
+  origin: originTypes;
+  wordAncient: string;
+  wordTranslit: string;
+  parsing: string;
 }
 
 export interface LabelProps extends ReactComponent {

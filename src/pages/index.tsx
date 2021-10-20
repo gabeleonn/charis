@@ -7,6 +7,7 @@ import { ChapterHeader } from '@/components/atoms/chapter-header';
 import { Button } from '@/components/atoms/button';
 import { Input } from '@/components/atoms/input';
 import { InputTypes } from '@/interfaces';
+import { DefinitionParsing } from '@/components/atoms/definition-parsing';
 
 function Home(): JSX.Element {
   const [text, setText] = useState('');
@@ -25,6 +26,12 @@ function Home(): JSX.Element {
       <Verse number={1}>
         I have some news, Jesus has died so you could live!
       </Verse>
+      <DefinitionParsing
+        origin="greek"
+        parsing="Personal / Relative Pronoun - Nominative Neuter Singular"
+        wordAncient="Ὃ"
+        wordTranslit="Ho"
+      />
       <StrongReference origin="greek">716</StrongReference>
       <StrongReference origin="hebrew">716</StrongReference>
       <AncientWord origin="hebrew">אָלֶף־בֵּית עִבְרִי‎</AncientWord>
