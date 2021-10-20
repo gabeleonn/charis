@@ -6,8 +6,8 @@ export function AncientWord({
   children,
 }: AncientWordProps): JSX.Element {
   return origin === 'hebrew' ? (
-    <HebrewWord>{children}</HebrewWord>
+    <HebrewWord lang="he">{children}</HebrewWord>
   ) : (
-    <GreekWord>{children}</GreekWord>
+    <GreekWord lang="grc">{children}</GreekWord>
   );
 }

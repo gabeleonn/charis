@@ -7,6 +7,7 @@ describe('Ancient Word component', () => {
       <AncientWord origin="greek">children</AncientWord>,
     );
 
+    expect(getByText('children')).toHaveProperty('lang', 'grc');
     expect(getByText('children')).toHaveStyle({
       fontFamily: 'GFS Didot',
     });
@@ -17,6 +18,7 @@ describe('Ancient Word component', () => {
       <AncientWord origin="hebrew">children</AncientWord>,
     );
 
+    expect(getByText('children')).toHaveProperty('lang', 'he');
     expect(getByText('children')).toHaveStyle({
       fontFamily: 'Noto Serif Hebrew',
     });
