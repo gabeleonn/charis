@@ -30,6 +30,19 @@ export interface LabelProps extends ReactComponent {
   helperText?: string;
 }
 
+export interface SelectOption {
+  value: string;
+  label: string;
+}
+export interface SelectProps extends Pick<LabelProps, 'helperText' | 'label'> {
+  placeholder: string;
+  value: SelectOption;
+  options: SelectOption[];
+  onChange: (event: SelectOption | null) => void;
+  name: string;
+  disabled?: boolean;
+}
+
 type InputTypes = 'textarea' | 'text';
 export interface InputProps extends Pick<LabelProps, 'helperText' | 'label'> {
   type: InputTypes;

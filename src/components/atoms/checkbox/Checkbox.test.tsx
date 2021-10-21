@@ -1,5 +1,4 @@
 import { act, render, fireEvent } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import { Checkbox } from './Checkbox';
 
 const mockOnChange = jest.fn();

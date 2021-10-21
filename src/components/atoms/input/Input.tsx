@@ -1,5 +1,6 @@
 import { InputProps } from '@/interfaces';
 import { Label } from '@/components/atoms/label';
+import { InputWrapper } from './styled';
 
 export function Input({
   type,
@@ -14,7 +15,7 @@ export function Input({
   function renderProperType() {
     if (type === 'text') {
       return (
-        <input
+        <InputWrapper
           type="text"
           name={name}
           id={name}

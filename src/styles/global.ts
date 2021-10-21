@@ -62,28 +62,6 @@ export default createGlobalStyle`
     }
   }
 
-  input {
-    padding: 8px 24px;
-    height: 48px;
-    border: 1px solid ${theme.colors.gray.lighter};
-    border-radius: 200px;
-    background: ${theme.colors.white.dark};
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
-    transition: all .2s;
-    color: ${theme.colors.black.regular};
-
-    &:focus {
-      border: 1px solid ${theme.colors.purple.regular};
-    }
-
-    &:disabled {
-      background: ${theme.colors.gray.lighter};
-      border: 1px solid ${theme.colors.gray.lighter};
-      color: ${theme.colors.gray.darker};
-      cursor: not-allowed;
-    }
-  }
-
   textarea {
     padding: 16px 24px;
     border: 1px solid ${theme.colors.gray.lighter};
@@ -107,17 +85,17 @@ export default createGlobalStyle`
   }
 
   *::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.6rem;
     height: 0.5rem;
     cursor: pointer;
   }
 
   *::-webkit-scrollbar-thumb {
       border-radius: 10px;
-      background: ${theme.colors.gray.regular};
+      background: ${theme.colors.gray.light};
   }
 
   *::-webkit-scrollbar-thumb:hover {
-    background: ${theme.colors.gray.light};
+    background: ${theme.colors.gray.regular};
   }
 `;

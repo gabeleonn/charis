@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
+
 import { AncientWord } from '@/components/atoms/ancient-word';
 import { StrongReference } from '@/components/atoms/strong-reference';
 import { Verse } from '@/components/atoms/verse';
@@ -10,12 +11,19 @@ import { Input } from '@/components/atoms/input';
 import { DefinitionParsing } from '@/components/atoms/definition-parsing';
 import { SearchInput } from '@/components/atoms/search-input';
 import { Checkbox } from '@/components/atoms/checkbox';
+import { Select } from '@/components/atoms/select';
 
 function Home(): JSX.Element {
   const [isChecked, setIsChecked] = useState(false);
   const [search, setSearch] = useState('');
   const [text, setText] = useState('');
   const [textarea, setTextarea] = useState('');
+
+  const options = [
+    { value: 'test', label: 'test' },
+    { value: 'test1', label: 'test1' },
+    { value: 'test2', label: 'test2' },
+  ];
 
   return (
     <>
@@ -45,7 +53,7 @@ function Home(): JSX.Element {
           name="search"
           value={search}
           onChange={e => setSearch(e.target.value)}
-          handleSearch={() => console.log(search)}
+          handleSearch={() => setSearch('')}
         />
         <Checkbox
           name="checkbox"
@@ -82,7 +90,14 @@ function Home(): JSX.Element {
           onChange={e => setTextarea(e.target.value)}
           type="textarea"
         />
-        {/* select and checkbox and search */}
+        <Select
+          name="select"
+          onChange={() => null}
+          value={options[0]}
+          options={options}
+          label="Select"
+          placeholder="placeholder"
+        />
         <Button id="abutton" ariaLabel="arialabel">
           Save me God!
         </Button>
