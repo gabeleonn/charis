@@ -23,6 +23,7 @@ export function Input({
           disabled={disabled}
           value={value}
           onChange={e => onChange(e)}
+          autoComplete="off"
         />
       );
     }

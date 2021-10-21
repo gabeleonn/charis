@@ -35,9 +35,11 @@ export function Select({
           }),
           menu: base => ({
             ...base,
-            borderRadius: '20px',
+            borderRadius: '8px',
             overflow: 'hidden',
             padding: '0',
+            margin: '8px 1% 0',
+            width: '98%',
           }),
           menuList: base => ({
             ...base,

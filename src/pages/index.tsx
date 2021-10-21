@@ -12,6 +12,7 @@ import { DefinitionParsing } from '@/components/atoms/definition-parsing';
 import { SearchInput } from '@/components/atoms/search-input';
 import { Checkbox } from '@/components/atoms/checkbox';
 import { Select } from '@/components/atoms/select';
+import { Logo } from '@/components/atoms/logo';
 
 function Home(): JSX.Element {
   const [isChecked, setIsChecked] = useState(false);
@@ -39,6 +40,7 @@ function Home(): JSX.Element {
           flexDirection: 'column',
         }}
       >
+        <Logo>Charis</Logo>
         <ChapterHeader reference="1 John 1" />
         <div style={{ width: '500px', height: '150px', overflow: 'scroll' }}>
           {Array.from(Array(10).keys()).map(item => (

@@ -34,6 +34,7 @@ export function SearchInput({
         onKeyDown={e => handleSearchByEnter(e)}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
+        autoComplete="off"
       />
       <SearchIcon width={16} onClick={handleSearch} />
     </SearchWrapper>
