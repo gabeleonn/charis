@@ -53,6 +53,13 @@ export interface SearchInputProps {
   disabled?: boolean;
 }
 
+export interface CheckboxProps {
+  onChange: (value: boolean) => void;
+  name: string;
+  label: string;
+  checked: boolean;
+}
+
 export interface ButtonProps extends ReactComponent {
   to?: string;
   onClick?: () => void;

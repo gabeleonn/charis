@@ -9,8 +9,10 @@ import { Button } from '@/components/atoms/button';
 import { Input } from '@/components/atoms/input';
 import { DefinitionParsing } from '@/components/atoms/definition-parsing';
 import { SearchInput } from '@/components/atoms/search-input';
+import { Checkbox } from '@/components/atoms/checkbox';
 
 function Home(): JSX.Element {
+  const [isChecked, setIsChecked] = useState(false);
   const [search, setSearch] = useState('');
   const [text, setText] = useState('');
   const [textarea, setTextarea] = useState('');
@@ -29,8 +31,8 @@ function Home(): JSX.Element {
           flexDirection: 'column',
         }}
       >
-        <div style={{ width: '500px', height: '100px', overflow: 'scroll' }}>
-          <ChapterHeader reference="1 John 1" />
+        <ChapterHeader reference="1 John 1" />
+        <div style={{ width: '500px', height: '150px', overflow: 'scroll' }}>
           {Array.from(Array(10).keys()).map(item => (
             <Verse key={item} number={item + 1}>
               I have some news, Jesus has died so you could live!
@@ -44,6 +46,12 @@ function Home(): JSX.Element {
           value={search}
           onChange={e => setSearch(e.target.value)}
           handleSearch={() => console.log(search)}
+        />
+        <Checkbox
+          name="checkbox"
+          label="Label"
+          checked={isChecked}
+          onChange={val => setIsChecked(val)}
         />
         <DefinitionParsing
           origin="greek"
